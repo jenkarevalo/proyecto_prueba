@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import Perfil from './componentes/Pefil';
+import Contador from './componentes/Contador';
+import { useState } from 'react';
 
 function App() {
+  //Declaramos un nuevo estado de contador
+  const [contador, setContador] = useState(0);
   return (
     <div className="App">
      <div class ='contenedor-principal'>
@@ -40,7 +44,16 @@ function App() {
         youtube=''
         twitter=''
       />
-
+      {/*Implementacion de un contador*/}
+      <p>Has hecho clic {contador} veces </p>
+      <button onClick={()=>setContador(contador+1)}>
+        Haz clic aquí
+      </button>
+      {/*Implementacion de un contador*/}
+      <p>Has hecho clic {contador} veces </p>
+      <button onClick={()=>setContador(contador-1)}>
+        Haz clic aquí
+      </button>
      </div>
     </div>
   );

@@ -1,3 +1,9 @@
+.contenedor-principal{
+  text-align: left;
+  font-family: fantasy;
+  margin: 30px 30px 30px;
+}
+
 .contenedor-perfil{
   width: 1000px;
   height: 300px;
